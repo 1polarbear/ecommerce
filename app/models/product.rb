@@ -1,3 +1,8 @@
 class Product < ApplicationRecord
-  monetize :price
+  include HasReference
+
+  has_many :user_products
+
+  monetize :price_cents
+
 end
