@@ -1,10 +1,10 @@
 class AddsToCart
 
-  attr_accessor :user, :product_id, :amount, :product, :success
+  attr_accessor :user, :product_id, :quantity, :product, :success
 
-  def initialize(user:, product_id:, amount:)
+  def initialize(user:, product_id:, quantity:)
     @user = user
-    @amount = amount.to_i
+    @quantity = quantity.to_i
     @product = Product.find(product_id)
     @success = false
   end
@@ -12,11 +12,12 @@ class AddsToCart
   def run
     begin
       Product.transaction do
-        user_product = UserProduct.find_or_create_by(product_id: product_id, user_id: user.id)
-        user_product.place_in_cart(amount)
+        user_product = UserProduct.find_or_create_by(product_id: product_id, user_id: user.try(:id))
+        user_product.place_in_cart(quantity)
         self.success = true
       end
-    rescue
+    rescue => e
+      Rails.logger.info e
       self.success = false
     end
   end

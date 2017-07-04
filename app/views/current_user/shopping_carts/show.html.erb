@@ -1,0 +1,15 @@
+
+
+<h1> Shopping Cart </h1>
+
+<table class="table">
+  <thead>
+    <th> Product Name </th>
+    <th> Product Price </th>
+  </thead>
+  <tbody>
+    <% @shopping_cart.products.each do |product| %>
+    <% end %>
+  </tbody>
+</table>
+<h3> Total <%= humanized_money_with_symbol(@shopping_cart.total_cost) %></h3>

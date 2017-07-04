@@ -4,7 +4,7 @@ class UserProduct < ApplicationRecord
 
   enum status: {unsold: 0, waiting: 1, purchased: 2}
 
-  def place_in_cart(amount)
-    update(status: :waiting, amount: amount)
+  def place_in_cart(quantity)
+    update(status: :waiting, quantity: quantity)
   end
 end

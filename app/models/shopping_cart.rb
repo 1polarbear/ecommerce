@@ -11,7 +11,8 @@ class ShoppingCart
   end
 
   def total_cost
-    products.map(&:price).sum.to_money
+    # calculate total with price and quantity
+    # products.map(&:price).sum.to_money
   end
 
 end

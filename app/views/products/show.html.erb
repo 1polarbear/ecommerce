@@ -1,0 +1,18 @@
+<h1><%= @product.name %></h1>
+<h3><%= humanized_money_with_symbol(@product.price) %></h3>
+<div class="row">
+  <%= form_tag(current_user_shopping_cart_path, method: :patch) do %>
+    <%= hidden_field_tag("product_id", @product.id) %>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= select_tag("quantity", options_for_select((1..50).to_a), class: "form-control") %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <%= submit_tag("Add to Cart", class: "btn btn-primary", id: "add-to-cart") %>
+      </div>
+    </div>
+  <% end %>
+</div>
+

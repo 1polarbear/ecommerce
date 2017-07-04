@@ -1,4 +1,4 @@
-module User
+module CurrentUser
   class PaymentsController < ApplicationController
 
     def index

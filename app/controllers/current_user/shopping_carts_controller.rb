@@ -1,4 +1,4 @@
-module User
+module CurrentUser
   class ShoppingCartsController < ApplicationController
 
     def show
@@ -9,11 +9,11 @@ module User
       adds_to_cart = AddsToCart.new(
         user: current_user,
         product_id: params[:product_id],
-        amount: params[:amount]
+        quantity: params[:quantity]
       )
       adds_to_cart.run
       if adds_to_cart.success
-        redirect_to shopping_cart_path
+        redirect_to current_user_shopping_cart_path
       else
         redirect_to root_path
       end
