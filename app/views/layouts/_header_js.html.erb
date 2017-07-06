@@ -1,0 +1,179 @@
+<script type="text/javascript">
+      window._wpemojiSettings = {
+         "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/",
+         "ext": ".png",
+         "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/",
+         "svgExt": ".svg",
+         "source": {
+            "concatemoji": "http:\/\/whiterabbit.axiomthemes.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"
+         }
+      };
+      ! function(a, b, c) {
+         function d(a) {
+            var b, c, d, e, f = String.fromCharCode;
+            if (!k || !k.fillText) return !1;
+            switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) {
+               case "flag":
+                  return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 56826, 8203, 55356, 56819), 0, 0), c = j.toDataURL(), b === c && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447), 0, 0), c = j.toDataURL(), b !== c);
+               case "emoji4":
+                  return k.fillText(f(55358, 56794, 8205, 9794, 65039), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55358, 56794, 8203, 9794, 65039), 0, 0), e = j.toDataURL(), d !== e
+            }
+            return !1
+         }
+
+         function e(a) {
+            var c = b.createElement("script");
+            c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+         }
+         var f, g, h, i, j = b.createElement("canvas"),
+            k = j.getContext && j.getContext("2d");
+         for (i = Array("flag", "emoji4"), c.supports = {
+               everything: !0,
+               everythingExceptFlag: !0
+            }, h = 0; h < i.length; h++) c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]);
+         c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
+            c.DOMReady = !0
+         }, c.supports.everything || (g = function() {
+            c.readyCallback()
+         }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function() {
+            "complete" === b.readyState && c.readyCallback()
+         })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji)))
+      }(window, document, window._wpemojiSettings);
+   </script>
+
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.1.0.2'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.1.0.2'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.5'></script>
+   <script type='text/javascript'>
+      /* <![CDATA[ */
+      var wc_add_to_cart_params = {
+         "ajax_url": "\/wp-admin\/admin-ajax.php",
+         "wc_ajax_url": "\/shop\/?wc-ajax=%%endpoint%%",
+         "i18n_view_cart": "View cart",
+         "cart_url": "http:\/\/whiterabbit.axiomthemes.com\/cart\/",
+         "is_cart": "",
+         "cart_redirect_after_add": "no"
+      };
+      /* ]]> */
+   </script>
+   <script type='text/javascript' src='//whiterabbit.axiomthemes.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.0.8'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.1.1'></script>
+   <script type='text/javascript' src='http://whiterabbit.axiomthemes.com/wp-content/themes/whiterabbit/fw/js/photostack/modernizr.min.js'></script>
+
+   <script type="text/javascript">
+      var ajaxRevslider;
+
+      jQuery(document).ready(function() {
+         // CUSTOM AJAX CONTENT LOADING FUNCTION
+         ajaxRevslider = function(obj) {
+
+            // obj.type : Post Type
+            // obj.id : ID of Content to Load
+            // obj.aspectratio : The Aspect Ratio of the Container / Media
+            // obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
+
+            var content = "";
+
+            data = {};
+
+            data.action = 'revslider_ajax_call_front';
+            data.client_action = 'get_slider_html';
+            data.token = '6a94076c6d';
+            data.type = obj.type;
+            data.id = obj.id;
+            data.aspectratio = obj.aspectratio;
+
+            // SYNC AJAX REQUEST
+            jQuery.ajax({
+               type: "post",
+               url: "http://whiterabbit.axiomthemes.com/wp-admin/admin-ajax.php",
+               dataType: 'json',
+               data: data,
+               async: false,
+               success: function(ret, textStatus, XMLHttpRequest) {
+                  if (ret.success == true)
+                     content = ret.data;
+               },
+               error: function(e) {
+                  console.log(e);
+               }
+            });
+
+            // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
+            return content;
+         };
+
+         // CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
+         var ajaxRemoveRevslider = function(obj) {
+            return jQuery(obj.selector + " .rev_slider").revkill();
+         };
+
+         // EXTEND THE AJAX CONTENT LOADING TYPES WITH TYPE AND FUNCTION
+         var extendessential = setInterval(function() {
+            if (jQuery.fn.tpessential != undefined) {
+               clearInterval(extendessential);
+               if (typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
+                  jQuery.fn.tpessential.defaults.ajaxTypes.push({
+                     type: "revslider",
+                     func: ajaxRevslider,
+                     killfunc: ajaxRemoveRevslider,
+                     openAnimationSpeed: 0.3
+                  });
+                  // type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
+                  // func: the Function Name which is Called once the Item with the Post Type has been clicked
+                  // killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
+                  // openAnimationSpeed: how quick the Ajax Content window should be animated (default is 0.3)
+               }
+            }
+         }, 30);
+      });
+   </script>
+
+
+   <script type="text/javascript">
+      function setREVStartSize(e) {
+         try {
+            var i = jQuery(window).width(),
+               t = 9999,
+               r = 0,
+               n = 0,
+               l = 0,
+               f = 0,
+               s = 0,
+               h = 0;
+            if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function(e, f) {
+                  f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e)
+               }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) {
+               var u = (e.c.width(), jQuery(window).height());
+               if (void 0 != e.fullScreenOffsetContainer) {
+                  var c = e.fullScreenOffsetContainer.split(",");
+                  if (c) jQuery.each(c, function(e, i) {
+                     u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u
+                  }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0))
+               }
+               f = u
+            } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight);
+            e.c.closest(".rev_slider_wrapper").css({
+               height: f
+            })
+         } catch (d) {
+            console.log("Failure at Presize of Slider:" + d)
+         }
+      };
+   </script>
+   <noscript>
+      <style>
+         .woocommerce-product-gallery {
+            opacity: 1 !important;
+         }
+      </style>
+   </noscript>
+   <noscript>
+      <style type="text/css">
+         .wpb_animate_when_almost_visible {
+            opacity: 1;
+         }
+      </style>
+   </noscript>
