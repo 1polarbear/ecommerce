@@ -18,7 +18,7 @@ function whiterabbit_theme_customizer(option, val) {
 			var parts = classes.split(' ');
 			classes = '';
 			for (var i=0; i<parts.length; i++) {
-				if (parts[i].indexOf('scheme_')==-1) 
+				if (parts[i].indexOf('scheme_')==-1)
 					classes += (classes ? ' ' : '') + parts[i];
 			}
 			classes += (classes ? ' ' : '') + 'scheme_' + val;
@@ -75,8 +75,10 @@ function whiterabbit_theme_customizer(option, val) {
 	if (custom_style != '') {
 		var styles = jQuery('#whiterabbit-customizer-styles-'+option).length > 0 ? jQuery('#whiterabbit-customizer-styles-'+option) : '';
 		if (styles.length == 0)
+			console.log("loaded")
 			jQuery('head').append('<style id="whiterabbit-customizer-styles-'+option+'" type="text/css">'+custom_style+'</style>');
 		else
 			styles.html(custom_style);
+			console.log('loaded custom')
 	}
 }

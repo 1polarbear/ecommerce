@@ -1,23 +1,40 @@
 class ProductsController < ApplicationController
 
-  def index
-    @products = Product.all
-  end
-
   def show
     @product = Product.find(params[:id])
   end
 
-  def products_boys
+  def boys
   end
 
-  def products_girls
+  def boys_infants
+  end
+
+  def boys_2to6
+  end
+
+  def boys_7to13
+  end
+
+  def girls
   end
 
   def toys
   end
 
   def books
+  end
+
+  def books_6to10
+  end
+
+  def books_graphic_novels
+  end
+
+  def books_novels
+  end
+
+  def books_young_adults
   end
 
   def gallery

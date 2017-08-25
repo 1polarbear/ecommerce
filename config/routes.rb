@@ -5,13 +5,20 @@ Rails.application.routes.draw do
   get 'static_pages/about'
 
 
-  get 'products/products_girls'
-  get 'products/products_boys'
+  get 'products/girls'
+  get 'products/boys'
   get 'products/toys'
   get 'products/books'
-  get 'products/boys_prod_1'
+  get 'products/books_6to10'
+  get 'products/books_graphic_novels'
+  get 'products/books_novels'
+  get 'products/books_young_adults'
+  get 'products/boys_infants'
+  get 'products/boys_2to6'
+  get 'products/boys_7to13'
   get 'products/gallery'
   get 'products/blog'
+
 
 
   # get '/about', to: 'static_pages#about'

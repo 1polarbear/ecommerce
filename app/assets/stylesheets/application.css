@@ -6700,3 +6700,7 @@ button,
 .scheme_light .sc_item_button > a:hover:before {
   color: #594593;
 }
+
+nav.menu_main_nav_area {
+    opacity: 1 !important;
+}
