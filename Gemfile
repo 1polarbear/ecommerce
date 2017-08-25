@@ -50,3 +50,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'money-rails', '~>1'
+group :production do
+  gem 'pg', '0.20.0'
+end
+
