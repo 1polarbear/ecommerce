@@ -1223,7 +1223,6 @@ body:not(.woocommerce) .widget_area:not(.footer_wrap) .widget_product_categories
 }
 
 .woocommerce table.shop_table thead th, .woocommerce-page table.shop_table thead th {
-	+: 400
 	font-size:1.125em;
 	font-weight: 400;
 	padding-top: 2em;
